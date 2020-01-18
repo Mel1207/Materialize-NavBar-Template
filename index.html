@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d787e0ace0.js" crossorigin="anonymous"></script>
+    <title>NavBar</title>
+</head>
+<body>
+    <!-- Navbar Setup -->
+    <nav class="teal navbar-fixed">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Contacs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidenav Setup -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Contacs</a></li>
+    </ul>
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
